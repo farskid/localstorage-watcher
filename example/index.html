@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>localStorage Watcher Example</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+				padding: 25px;
+				font-family: Helvetica Neue, Helvetica, sans-serif;
+			}
+			h2 {
+				background-color: #eee;
+				border-radius: 3px;
+				padding: 15px;
+				font-weight: 400;
+				line-height: 2;
+			}
+			button {
+				background-color: rebeccapurple;
+				color: white;
+				border: 0 none;
+				border-radius: 3px;
+				padding: 6px 12px;
+				font-size: 1.1em;
+				cursor: pointer;
+			}
+			button:active, button:focus {
+				opacity: .75;
+				outline: 0 none;
+			}
+			button:hover {
+				opacity: .9;
+			}
+			code {
+				background-color: red;
+				color: white;
+				border-radius: 3px;
+				display: inline-block;
+				margin: 0 5px;
+				font-weight: 100;
+				letter-spacing: -1px;
+				line-height: 1;
+				padding: 2px 5px;
+			}
+			#console {
+				background-color: black;
+				color: white;
+				padding: 10px;
+				margin-top: 10px;
+				line-height: 2;
+			}
+			#console:empty {
+				display: none;
+			}
+			#console > *::before {
+				content: '$ ';
+				display: inline-block;
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>Press <code>start button</code> to initialize watcher and feel free to add items using <code>add item button</code></h2>
+		<button onclick="addItem()">add item</button>
+		<button onclick="start()">start watcher</button>
+		<button onclick="stop()">stop watcher</button>
+		<pre id="console"></pre>
+		<script src="example.js"></script>
+		<script>
+			function addItem() {
+				var newItem = Math.floor(Math.random() * 999 + 1)
+				console.log('added ' + newItem + ' to storage')
+				window.localStorage.setItem('dummy' + newItem, JSON.stringify(newItem))
+			}
+			function start() {
+				storageWatcher.start()
+			}
+			function stop() {
+				storageWatcher.stop()
+			}
+		</script>
+	</body>
+</html>

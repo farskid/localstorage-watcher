@@ -1,0 +1,26 @@
+{
+  "name": "localstorage-watcher",
+  "version": "1.0.1",
+  "description": "a watcher fot local storage changes",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farskid/localstorage-watcher.git"
+  },
+  "keywords": [
+    "localstorage",
+    "watcher"
+  ],
+  "author": "Farzad YZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farskid/localstorage-watcher/issues"
+  },
+  "homepage": "https://github.com/farskid/localstorage-watcher#readme"
+}

@@ -1,6 +1,6 @@
 {
   "name": "localstorage-watcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a watcher fot local storage changes",
   "main": "index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farskid/localstorage-watcher.git"
+    "url": "git+https://github.com/farskid/localstorage-watch.git"
   },
   "keywords": [
     "localstorage",

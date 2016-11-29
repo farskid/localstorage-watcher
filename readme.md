@@ -23,7 +23,7 @@ The whole system works on `storageWatcher` global variable.
   var watcher = storageWatcher;
 
   // Configure watcher
-  watcher.configue({
+  watcher.configure({
   	verbose: true, // (Bool) Default: true
   	duration: 3000, // (Integer) Default: 1500
   	logType: 'warn' // (String) Default: 'info'
